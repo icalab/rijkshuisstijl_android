@@ -8,7 +8,7 @@ It makes sure the app is displayed using the correct fonts, colors and layout.
 
 This skeleton was developed at <a href="http://www.icalab.nl">ICA-lab</a>,
 a development office of the 
-<http://www.han.nl/international/english/about-han/organisation/faculties-and-institutes/information-technology-media-communication/>Academy of Information Technology, Media and Communication (ICA)<a> of 
+<a href="http://www.han.nl/international/english/about-han/organisation/faculties-and-institutes/information-technology-media-communication">Academy of Information Technology, Media and Communication (ICA)</a> of 
 <a href="http://www.han.nl/international/english/">HAN University of Applied Sciences</a>.
 
 ## Installation / usage
