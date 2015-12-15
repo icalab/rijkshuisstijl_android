@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Put the name of the institution that is sponsoring this app here (eg: Rijksinstituut voor Volksgezondheid en Milieu) -->
+    <string name="rijkshuisstijl_kleindochter">kleindochter</string>
+    <!-- Put the name of the department to which the institution that is sponsoring this app here (eg: Ministerie van Volksgezondheid, Welzijn en Sport) -->
+    <string name="rijkshuisstijl_dochter">dochter</string>
+    <string name="app_name">YourAppName</string>
+
+    <string name="menu_item_home">Home</string>
+
+</resources>

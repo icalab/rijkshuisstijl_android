@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- This is the "Rijksoverheid blauw" color -->
+    <color name="rhMainColor">#00588e</color>
+    <!-- This is the color for the default rh_footer -->
+    <color name="rhFooterBackgroundColor">#e6e6e6</color>
+    <color name="rhFooterBorderColor">#525252</color>
+    <color name="rhFooterTextColor">#000</color>
+    <!-- The default text and background colors. -->
+    <color name="defaultTextColor">#000</color>
+    <color name="defaultBackgroundColor">#fff</color>
+
+    <!-- Colors for the selected color scheme. Select the scheme you want to
+         use from the list below and set the appropriate values. -->
+
+<!--
+Scheme name,Primary text color, Primary background, Secondary background, Tertiary background
+Violet,#fff,#a90061,#e5b2cf,#f2d9e7
+Roze,#000,#f092cd,#fadef0,#fdeff8
+Rood,#fff,#d52b1e,#f2bfbb,#f9dfdd
+Robijnrood,#fff,#ca005d,#efb2ce,#f7d9e7
+Paars,#fff,#42145f,#c6b8cf,#e3dce7
+Oranje,#000,#e17000,#f6d4b2,#fbead9
+Mosgroen,#fff,#777c00,#d6d7b2,#ebebd9
+Mintgroen,#000,#76d2b6,#d6f1e9,#ebf8f4
+Lichtblauw,#000,#8fcae7,#ddeff8,#eef7fb
+Hemelblauw,#fff,#007bc7,#b2d7ee,#d9ebf7
+Groen,#fff,#39870c,#c3dbb6,#e1eddb
+Geel,#000,#f9e11e,#fdf6bb,#fefbdd
+Donkergroen,#fff,#275937,#becdc3,#dfe6e1
+Donkergeel,#000,#ffb612,#ffe9b7,#fff4dc
+Donkerbruin,#fff,#673327,#d1c1be,#e8e1df
+Bruin,#fff,#94710a,#dfd4b5,#efeada
+Donkerblauw,#fff,#01689b,#cce0f1,#e5f0f9
+-->
+    <!-- Color scheme: Violet -->
+    <color name="primaryBackground">#A90061</color>
+    <color name="secondaryBackground">#e5b2cf</color>
+    <color name="tertiaryBackground">#F2D9E7</color>
+    <color name="primaryTextColor">#FFF</color>
+    <color name="secondaryTextColor">#000</color>
+    <color name="tertiaryTextColor">#000</color>
+</resources>

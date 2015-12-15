@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the layout for the action bar for Rijkshuisstijl apps. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height = "match_parent"
+    android:layout_width = "match_parent"
+    android:id="@+id/actionBarWrapper"
+    android:background="@color/primaryBackground">
+
+
+    <ImageView android:id="@+id/menuButton"
+        android:layout_height="match_parent"
+        android:layout_width = "wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/rh_menu"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- The background image -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="top"
+        >
+            <ImageView
+                android:id="@+id/mainMenuHeaderImage"
+                android:layout_height="wrap_content"
+                android:layout_width="18dp"
+                android:adjustViewBounds="true"
+                android:gravity="top"
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/rh_header"/>
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<resources>
+
+    <style name="RHThemeNoActionBar" parent="RHTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="RHTheme" parent="android:Theme.Holo.Light">
+        <item name="android:typeface">serif</item>
+
+        <item name="android:colorForeground">@color/defaultTextColor</item>
+        <item name="android:colorForegroundInverse">@color/defaultBackgroundColor</item>
+        <item name="android:colorBackground">@color/defaultBackgroundColor</item>
+
+
+        <item name="android:actionBarStyle">@style/RHActionBar</item>
+
+
+    </style>
+
+    <!-- Styles for the action bar. -->
+
+    <style name="RHActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/primaryBackground</item>
+        <item name="android:titleTextStyle">@style/RHActionBarText</item>
+    </style>
+    <style name="RHActionBarText">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <!-- Styles for the main (button) rh_menu. -->
+
+    <style name="RHStartScreenButtonLabel">
+        <item name="android:textColor">@color/tertiaryTextColor</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="RHStartScreenButton">
+        <item name="android:background">@color/tertiaryBackground</item>
+        <item name="android:colorForeground">@color/tertiaryTextColor</item>
+    </style>
+
+    <!-- Styles for the slide / hamburger / three line rh_menu -->
+    <style name="RHSlidemenuButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/defaultTextColor</item>
+        <item name="android:background">@color/defaultBackgroundColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <!-- Styling for simple list views -->
+    <style name="RHListView" parent="@android:style/Widget.ListView">
+        <item name="android:background">@color/defaultBackgroundColor</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@color/secondaryBackground</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:listSelector">@drawable/rh_list_item_selector</item>
+    </style>
+    <style name="RHListItemView">
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <!-- Styling for search inputs -->
+    <style name="RHSearchInputText">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+
+    <!-- Other styling -->
+    <style name="RHTitle">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+
+    <!-- Project specific styling. This should go in a different file at some point. -->
+
+
+</resources>

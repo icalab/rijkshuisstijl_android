@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the larger version of the layout for the start screen of your app. Add buttons as needed. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="24"
+    android:windowActionBar="false"
+    android:background = "@color/defaultBackgroundColor">
+
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="6"
+        android:orientation="vertical"
+        android:background="@color/defaultBackgroundColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                >
+                <ImageView
+                    android:id="@+id/mainMenuHeaderImage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:gravity="top"
+                    android:scaleType="fitCenter"
+                    android:layout_centerHorizontal="true"
+
+                    android:src="@drawable/rh_header_main_menu"/>
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/rh_bar_secondary_bottom">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                >
+                <ImageView
+                    android:id="@+id/menuButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/rh_menu"/>
+            </LinearLayout>
+            <TextView android:id="@+id/menuTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_gravity="center_vertical"
+                style="@style/RHActionBarText"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Main content -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+
+        <!-- Menu -->
+        <fragment android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            class="nl.han.ica.icalab.rijkshuisstijl.RHMenuFragment"
+            tools:layout="@layout/rh_menu_fragment" />
+
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = "1"
+                android:orientation = "horizontal"
+                android:layout_marginTop="1dp"
+                android:weightSum = "2">
+
+                <LinearLayout android:id="@+id/exampleButton1"
+                    android:layout_height = "match_parent"
+                    android:layout_width = "0dp"
+                    android:layout_weight = "1"
+                    style="@style/RHStartScreenButton"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/diseaseListTitle"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text= "Menu Item"
+                        android:layout_gravity="center"
+                        style="@style/RHStartScreenButtonLabel"
+                        android:layout_marginTop="5dp" />
+
+                    <ImageView android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:src="@drawable/rh_home_icon"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/hygieneButton"
+                    android:layout_height = "match_parent"
+                    android:layout_width = "0dp"
+                    android:layout_weight = "1"
+                    style="@style/RHStartScreenButton"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/hygieneTitle"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text= "Menu Item"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        style="@style/RHStartScreenButtonLabel" />
+
+                    <ImageView android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:src="@drawable/rh_home_icon"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = "1"
+                android:orientation = "horizontal"
+                android:layout_marginTop="1dp"
+                android:weightSum = "2">
+
+
+
+                <LinearLayout android:id="@+id/faqButton"
+                    android:layout_height = "match_parent"
+                    android:layout_width = "0dp"
+                    android:layout_weight = "1"
+                    style="@style/RHStartScreenButton"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/faqTitle"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text= "Menu Item"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        style="@style/RHStartScreenButtonLabel" />
+
+                    <ImageView android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:src="@drawable/rh_home_icon"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/infoButton"
+                    android:layout_height = "match_parent"
+                    android:layout_width = "0dp"
+                    android:layout_weight = "1"
+                    android:layout_marginLeft="0.5dp"
+                    style="@style/RHStartScreenButton"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/infoTitle"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text= "Menu Item"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        style="@style/RHStartScreenButtonLabel" />
+
+                    <ImageView android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:src="@drawable/rh_home_icon"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Footer -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1    "
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rh_footer_background_main_menu"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/footer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="bottom"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rh_footer_main_menu"/>
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

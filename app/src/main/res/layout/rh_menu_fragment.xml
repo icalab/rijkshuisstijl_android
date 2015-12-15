@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/rh_menu_background"
+    android:orientation="vertical"
+    android:paddingRight="1dp"
+    android:visibility="gone"
+
+
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <LinearLayout android:id="@+id/menu_button_home"
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:minHeight="50dp"
+                style="@style/RHSlidemenuButton"
+                android:background="@drawable/rh_menu_button">
+                <ImageView android:src="@drawable/rh_home_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:padding="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_item_home"
+                    style="@style/RHSlidemenuButton"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft= "5dp"/>
+            </LinearLayout>
+
+            <!-- Add your other rh_menu items here. -->
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

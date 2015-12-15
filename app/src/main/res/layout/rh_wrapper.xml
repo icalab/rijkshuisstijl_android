@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the wrapper for all Rijkshuisstijl content. Your own content should go
+    inside the LinearLayout with id "contentArea" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="14"
+    android:background="@color/defaultBackgroundColor"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Main area -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="12"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+
+        <!-- Menu -->
+        <fragment android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            class="nl.han.ica.icalab.rijkshuisstijl.RHMenuFragment"
+            tools:layout="@layout/rh_menu_fragment" />
+
+        <!-- Content area -->
+        <LinearLayout android:id="@+id/contentArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <!-- Footer -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:background="@color/defaultBackgroundColor"
+            >
+
+            <ImageView
+                android:id="@+id/footer"
+                android:layout_height="wrap_content"
+                android:layout_width="16dp"
+                android:gravity="bottom"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/rh_footer"/>
+            />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rh_footer_background_default">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                >
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/rh_footer_text"/>
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
