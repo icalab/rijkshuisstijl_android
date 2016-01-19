@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This is the layout for the start screen of your app. Add buttons as needed. -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="24"
     android:windowActionBar="false"
     android:background = "@color/defaultBackgroundColor">
 
     <!-- Header -->
-    <LinearLayout android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="7"
-        android:weightSum="6"
+    <LinearLayout
+        android:id="@+id/mainMenuHeader"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
         android:orientation="vertical"
-        android:background="@color/defaultBackgroundColor">
+        android:background="@color/defaultBackgroundColor"
+        android:layout_alignParentTop="true">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
+            android:layout_height="80dp"
             android:orientation="vertical"
             android:gravity="center_horizontal"
             >
@@ -44,9 +43,8 @@
         </LinearLayout>
 
         <LinearLayout android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="40dp"
             android:orientation="horizontal"
-            android:layout_weight="2"
             android:padding="0dp"
             android:layout_margin="0dp"
             android:background="@drawable/rh_bar_secondary_bottom">
@@ -70,6 +68,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
                 android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dp"
                 style="@style/RHActionBarText"
                 />
         </LinearLayout>
@@ -79,9 +78,10 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="16"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_below="@+id/mainMenuHeader"
+        android:layout_above="@+id/mainMenuFooter"
         xmlns:tools="http://schemas.android.com/tools"
         >
 
@@ -89,7 +89,7 @@
         <fragment android:id="@+id/menu"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            class="nl.han.ica.icalab.rijkshuisstijl.RHMenuFragment"
+            class="nl.han.ica.icalab.rivm_brandweer_android.RHMenuFragment"
             tools:layout="@layout/rh_menu_fragment" />
 
 
@@ -98,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:id="@+id/startScreenButtonWrapper"
             >
             <LinearLayout android:layout_width="match_parent"
                 android:layout_height = "0dp"
@@ -206,7 +207,7 @@
                     <TextView android:id="@+id/infoTitle"
                         android:layout_width = "wrap_content"
                         android:layout_height = "wrap_content"
-                        android:text= "Menu Item"
+                        android:text= "Menu Item with an extremely long title."
                         android:layout_gravity="center"
                         android:layout_marginTop="5dp"
                         style="@style/RHStartScreenButtonLabel" />
@@ -218,6 +219,9 @@
                         android:src="@drawable/rh_home_icon"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"/>
+
+
+
                 </LinearLayout>
             </LinearLayout>
 
@@ -231,12 +235,13 @@
     <!-- Footer -->
 
     <LinearLayout
+        android:id="@+id/mainMenuFooter"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1    "
+        android:layout_height="20dp"
         android:layout_marginTop="2dp"
         android:orientation="vertical"
         android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
         android:background="@drawable/rh_footer_background_main_menu"
         >
         <LinearLayout
@@ -258,4 +263,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
